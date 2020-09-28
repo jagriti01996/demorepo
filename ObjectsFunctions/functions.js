@@ -105,7 +105,7 @@ interviewQuestions('')('Riya');
  console.log(allDiscounts);
 
  // Returning function from one function
- function eligibleForGifts(arr1, arr2){
+ function isEligibleForGifts(arr1, arr2){
      var totalPrice = [];
      for(var i = 0; i < arr1.length; i++){
          totalPrice.push(arr1[i] + arr2[i]);
@@ -124,8 +124,8 @@ interviewQuestions('')('Riya');
      }
  }
 
- // isGiftThere now pointing towards the eligibleForgifts OBJECT so all things are now visible in isGiftThere
+ // isGiftThere now pointing towards the isEligibleForGifts OBJECT so all things are now visible in isGiftThere
 
- var isGiftThere = eligibleForGifts(allDiscounts, itemPrices);
- eligibleForGifts(allDiscounts, itemPrices);
+ var isGiftThere = isEligibleForGifts(allDiscounts, itemPrices);
+ isEligibleForGifts(allDiscounts, itemPrices);
  isGiftThere('Riya');

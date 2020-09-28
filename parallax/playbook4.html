@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="playbook4.css" />
+  </head>
+  <body>
+    <!-- navigation - bar -->
+    <div class="navigation">
+      <div>
+        <ul class="nav">
+          <li class="link">
+            <a href="plyabook.html">Dynamic Delivery-CIC Playbook</a>
+          </li>
+          <li class="link"><a href="playbookpage2.html">Key Personas</a></li>
+          <li class="link"><a href="playbook3.html">A day in life of</a></li>
+          <li class="link"><a href="playbook4.html">Ready Reckoner-Enablers</a></li>
+        </ul>
+      </div>
+      <div class="login"><a href="">W3</a> &nbsp <a href="">Sign In</a></div>
+    </div>
+
+    <!-- header -->
+    <div class="header"><p>#Ready Reckoner-Enablers</p></div>
+
+    <div class="container">
+      <!-- collapsible - 1 -->
+      <button class="collapsible">
+        <div class="plus"></div>
+        <span>Infrastructure</span>
+      </button>
+      <div class="content">
+        <div>
+          <table>
+            <tr>
+              <th>Category</th>
+              <th>Subcategory</th>
+              <th>Reference</th>
+            </tr>
+            <tr>
+              <td>Network / Connectivity</td>
+              <td>
+                <div>
+                  Primary & Secondary Internet<br />Connections (2 separate
+                  providers)
+                </div>
+                <div>Fixed Line Connection</div>
+                <div>
+                  Mobile Phone, New Dongle / Data card - Instrument Purchase<br />&
+                  Connection
+                </div>
+              </td>
+              <td>
+                <div>
+                  <ul>
+                    <li>
+                      1) UC-REQUEST@IBM-ISA Tool -
+                      <a
+                        href="https://ppysydapwas01.sl.bluecloud.ibm.com/
+                               UCREQUEST/"
+                        >https://ppysydapwas01.sl.bluecloud.ibm.com/
+                        UCREQUEST/</a
+                      >
+                    </li>
+                    <li>
+                      2) Expense Reimb Tool -
+                      <a href="https://www.concursolutions.com/home.asp"
+                        >https://www.concursolutions.com/home.asp</a
+                      >
+                    </li>
+                    <li>
+                      3) Buying Mobile or Data card instrument is managed thru
+                      claim process with prior approval
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+
+            <!-- second-row -->
+            <tr>
+                <td>Asset Management</td>
+                <td>
+                    <div>IBM Laptop - New (STPI & SEZ)</div>
+                    <div>IBM Laptop - End of Life Replacement</div>
+                    <div>Client Laptop, Accessories (Headset, Mouse etc.,)</div>
+                    <div>Asset verification & Returns process</div>
+                    <div>Accessories - Power Backup - UPS</div>
+                </td>
+                <td>
+                    <div>Connect with HR / On boarding Team</div>
+                    <div>
+                        <p>IBM Asset management link</p>
+                        <ul>
+                            <li><a href="https://devices.w3cloud.ibm.com/devices/#/">1) https://devices.w3cloud.ibm.com/devices/#/</a></li>
+                            <li><a href="https://w3.ibm.com/help/ui/#/browse/software_and_hardware/product/asset_management/ devices_at_ibm">2) https://w3.ibm.com/help/ui/#/browse/software_and_hardware/product/asset_management/ devices_at_ibm</a></li>
+                            <li><a href="eAmt Lite Tool - https://w3-201.ibm.com/services/eamtlite/WorkWithAssets.wssprocess with
+                                prior approva">3) eAmt Lite Tool - https://w3-201.ibm.com/services/eamtlite/WorkWithAssets.wssprocess with
+                                prior approva</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Help @ IBM link</p>
+                        <ul>
+                            <li><a href="https://w3.ibm.com/help/#/">1) https://w3.ibm.com/help/#/</a></li>
+                            <li>2) New - To be updated - Door step Delivery & Door step Repair is being worked out.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        Project specific PMO Support / Onboarding
+                    </div>
+                    <div>
+                        <ul>
+                            <li>eAmt Lite Tool -<a href="https://w3-201.ibm.com/services/eamtlite/WorkWithAssets.wss">https://w3-201.ibm.com/services/eamtlite/WorkWithAssets.wss</a></li>
+                            <li>2) New - Door step Repair is being worked out.</li>
+                        </ul>
+                    </div>
+                    <div>New - to be updated</div>
+                    <div>New - Not Mandatory for HO. Some suggestive options for acquiring them will be provided</div>
+                    <div>New - to be updated</div>
+                    <div>New - to be updated</div>
+                </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script type="text/javascript">
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

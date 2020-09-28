@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="jquery.scrolleffects.js"></script>
+    <link rel="stylesheet" type="text/css" href="teamMember.css" />
+  </head>
+  <body>
+    <div class="container-center">
+      <div class="line"></div>
+      <div class="main-heading"></div>
+      <div class="column">
+        <div id="time1"><img src="assets/Rashi.svg" /></div>
+        <div id="time2"><img src="assets/Rashi.svg" /></div>
+      </div>
+      <div class="column">
+            <div class="detail1" id="details">
+                <h3 class="employee-name"></h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        
+
+      var time1 = document.getElementById("time1");
+      scroll = window.pageYOffset;
+      document.addEventListener("scroll", function (e) {
+        var offset = window.pageYOffset;
+        scroll = offset;
+        time1.style.left = 100 + scroll + "px";
+        time1.style.top = 100 + scroll + "px";
+      });
+
+      var details = document.getElementById("details");
+        scroll = window.pageYOffset;
+        document.addEventListener("scroll", function (e) {
+        var offset = window.pageYOffset;
+        scroll = offset;
+        details.style.left = 100 + scroll + "px";
+        details.style.top = 100 + scroll + "px";
+      });
+
+      var time2 = document.getElementById("time2");
+      scroll = window.pageYOffset;
+      document.addEventListener("scroll", function (e) {
+        var offset = window.pageYOffset;
+        scroll = offset;
+        time2.style.left = 100 + scroll + "px";
+      });
+    </script>
+  </body>
+</html>

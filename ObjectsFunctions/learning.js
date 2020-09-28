@@ -22,7 +22,7 @@ var Person = function (name, yearOfBirth, job) {
 //WHAT NEW keyword do:
 // 1. A new empty object is created.
 // 2. The cunstructor function i.e Person is called with the arguments that are specified
-// 3. Calling a function will create a new EXECUTION CONTEXT which also contain this variable
+// 3. Calling a function will create a new EXECUTION CONTEXT which also contain "this" variable
 // in case of regular function call THIS variable points towards the global object but here
 // the NEW operator points to the empty object which was created by it in the beginning
 // so when name, yearOfBirth, job are passed to the constructor function parameters it get set to

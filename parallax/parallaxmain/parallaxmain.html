@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="parallaxmain.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="image"><img src="Rashi.svg" /></div>
+      <div id="image1"><img src="Rashi.svg" /></div>
+      <div id="details">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magnam
+          aspernatur cum iusto similique eius modi neque pariatur reprehenderit
+          ad illo explicabo, excepturi quo? Est eum tempora adipisci error ut?
+        </p>
+      </div>
+      <div style="margin-top: 1200px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam tenetur debitis suscipit consectetur error labore. Sed, sunt ea. Minus hic libero itaque doloremque eveniet animi atque ratione aspernatur officia velit.
+          lorem lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis expedita minima at, nam, nihil aliquid cum reprehenderit nisi pariatur laboriosam exercitationem quos. Exercitationem deserunt molestiae sint veritatis at ullam beatae!</div>
+    </div>
+    <script type="text/javascript">
+      var image = document.getElementById("image");
+      var image1 = document.getElementById("image1");
+      var details = document.getElementById('details');
+      var offsetdetails = details.offsetTop;
+      var image1Top = image1.offsetTop;
+      var imageTop = image.offsetTop;
+      console.log(image1Top)
+      console.log(imageTop)
+      scroll = window.pageYOffset;
+      document.addEventListener("scroll", function (e) {
+        var offset = window.pageYOffset;
+        scroll = offset;
+        console.log(scroll)
+        // image.style.left = -50 + scroll + "px";
+        image.style.top = scroll < imageTop  ? scroll+ 100 + "px" : imageTop;
+        image.style.left =
+          scroll < imageTop  ? -50 + scroll+ 100 + "px" : 552 + "px";
+
+          image1.style.top = scroll < 250  ? scroll+ 100 + "px" : image1Top;
+        image1.style.left =
+          scroll < 250  ? scroll+ 100 + "px" : 552 + "px" + image1Top ;
+
+          details.style.opacity = scroll < imageTop  ? 0 : 1;
+      });
+
+
+
+
+    //   var details = document.getElementById('details');
+    //   var offsetdetails = details.offsetTop;
+      console.log(offsetdetails)
+      scroll = window.pageYOffset;
+      
+      document.addEventListener('scroll',function(e){
+          var offset = window.pageYOffset;
+          scroll = offset;
+          
+        //   details.style.opacity = scroll == offsetdetails ? 1*scroll + '%' : 0;
+      });
+
+      // Get the navbar
+    //   var details = document.getElementById("details");
+
+    //   // Get the offset position of the navbar
+    //   var offsetdetails = details.offsetTop;
+    //     console.log(offsetdetails);
+    //   // Add the sticky class to the navbar when you reach its scroll position. Remove the sticky class when you leave the scroll position.
+    //   function myFunction() {
+    //     if (window.pageYOffset === offsetdetails) {
+    //       details.style.opacity = 1;
+    //     } else {
+    //       details.styel.opacity = 0;
+    //     }
+    //   }
+      // var image = document.getElementById('image');
+      // scroll = window.pageYOffset;
+      // document.addEventListener('scroll', function(e){
+      //     var offset = window.pageYOffset;
+      //     scroll = offset;
+      //     image.style.left = 100 + scroll + "px";
+      //     image.style.top = 100 + scroll + "px";
+      // });
+    </script>
+  </body>
+</html>
